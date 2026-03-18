@@ -1,50 +1,82 @@
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useState, useEffect } from 'react';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/sections/HeroSection';
+import AboutSection from '@/sections/AboutSection';
+import ProductsSection from '@/sections/ProductsSection';
+import SystemOverview from '@/sections/SystemOverview';
+import DecorationService from '@/sections/DecorationService';
+import CustomFurniture from '@/sections/CustomFurniture';
+import ReadyMadeFurniture from '@/sections/ReadyMadeFurniture';
+import FlooringSystem from '@/sections/FlooringSystem';
+import BathroomFixtures from '@/sections/BathroomFixtures';
+import HomeAppliances from '@/sections/HomeAppliances';
+import MaterialSelection from '@/sections/MaterialSelection';
+import ExteriorWall from '@/sections/ExteriorWall';
+import FactoryDirect from '@/sections/FactoryDirect';
+import Partnership from '@/sections/Partnership';
+import WhyChooseUs from '@/sections/WhyChooseUs';
+import GlobalSupply from '@/sections/GlobalSupply';
+import ContactSection from '@/sections/ContactSection';
+import Footer from '@/sections/Footer';
 
-import Navbar from './components/Navbar';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import CoreSystems from './sections/CoreSystems';
-import Products from './sections/Products';
-import WallSystem from './sections/WallSystem';
-import Applications from './sections/Applications';
-import Advantages from './sections/Advantages';
-import SupplyChain from './sections/SupplyChain';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
-
-// Register GSAP plugins
-gsap.registerPlugin(ScrollTrigger);
+const sections = [
+  'decoration-service',
+  'custom-furniture',
+  'ready-made',
+  'flooring',
+  'bathroom',
+  'appliances',
+  'materials',
+  'exterior-wall',
+  'factory',
+  'partnership',
+];
 
 function App() {
+  const [activeSection, setActiveSection] = useState('');
+
   useEffect(() => {
-    // Configure ScrollTrigger defaults
-    ScrollTrigger.defaults({
-      toggleActions: 'play none none reverse',
-    });
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
 
-    // Refresh ScrollTrigger on load
-    ScrollTrigger.refresh();
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
     };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#f5f5f5]">
-      <Navbar />
+    <div className="min-h-screen bg-dark">
+      <Navbar activeSection={activeSection} />
       <main>
-        <Hero />
-        <About />
-        <CoreSystems />
-        <Products />
-        <WallSystem />
-        <Applications />
-        <Advantages />
-        <SupplyChain />
-        <Contact />
+        <HeroSection />
+        <AboutSection />
+        <ProductsSection />
+        <SystemOverview />
+        <DecorationService />
+        <CustomFurniture />
+        <ReadyMadeFurniture />
+        <FlooringSystem />
+        <BathroomFixtures />
+        <HomeAppliances />
+        <MaterialSelection />
+        <ExteriorWall />
+        <FactoryDirect />
+        <Partnership />
+        <WhyChooseUs />
+        <GlobalSupply />
+        <ContactSection />
       </main>
       <Footer />
     </div>
