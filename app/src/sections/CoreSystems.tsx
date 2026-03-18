@@ -11,7 +11,7 @@ const systems = [
     title: '全屋定制',
     subtitle: 'Custom Furniture',
     description: '从设计到安装，提供衣柜、橱柜、书柜等一站式定制服务',
-    image: '/images/system-custom.jpg',
+    image: '/hanshan/images/system-custom.jpg',
     href: '#custom',
   },
   {
@@ -19,7 +19,7 @@ const systems = [
     title: '地板系统',
     subtitle: 'Flooring System',
     description: '实木地板、复合地板、SPC石塑地板等多种选择',
-    image: '/images/system-flooring.jpg',
+    image: '/hanshan/images/system-flooring.jpg',
     href: '#flooring',
   },
   {
@@ -27,7 +27,7 @@ const systems = [
     title: '洁具卫浴',
     subtitle: 'Bathroom Solutions',
     description: '马桶、浴室柜、淋浴房、龙头花洒等全品类配套',
-    image: '/images/system-bathroom.jpg',
+    image: '/hanshan/images/system-bathroom.jpg',
     href: '#bathroom',
   },
   {
@@ -35,7 +35,7 @@ const systems = [
     title: '家电系统',
     subtitle: 'Home Appliances',
     description: '厨电、热水器、净水系统等智能家电集成方案',
-    image: '/images/system-appliance.jpg',
+    image: '/hanshan/images/system-appliance.jpg',
     href: '#appliances',
   },
   {
@@ -43,7 +43,7 @@ const systems = [
     title: '材料选配',
     subtitle: 'Materials',
     description: '欧松板、颗粒板、三聚氰胺板等高端板材精选',
-    image: '/images/product-osb.jpg',
+    image: '/hanshan/images/product-osb.jpg',
     href: '#materials',
   },
   {
@@ -51,7 +51,7 @@ const systems = [
     title: '外墙系统',
     subtitle: 'Wall Systems',
     description: '外墙装饰板、保温系统、仿石漆等建筑外立面方案',
-    image: '/images/wall-system.jpg',
+    image: '/hanshan/images/wall-system.jpg',
     href: '#wall-system',
   },
 ];

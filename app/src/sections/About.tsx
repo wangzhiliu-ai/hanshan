@@ -157,7 +157,7 @@ export default function About() {
           <div ref={imageRef} className="relative opacity-0">
             <div className="relative rounded-xl overflow-hidden shadow-2xl">
               <img
-                src="/images/about-image.jpg"
+                src="/hanshan/images/about-image.jpg"
                 alt="悍山板材"
                 className="w-full h-auto object-cover"
               />

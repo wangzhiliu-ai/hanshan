@@ -11,7 +11,7 @@ const applications = [
     title: '家具制造',
     subtitle: 'Furniture Manufacturing',
     description: '为衣柜、橱柜、办公家具等提供高品质基材和饰面板材，满足定制化生产需求。并提供成品家具、五金配件等一站式配齐服务。',
-    image: '/images/app-furniture.jpg',
+    image: '/hanshan/images/app-furniture.jpg',
     stats: [
       { label: '合作客户', value: '500+', icon: Users },
       { label: '满意度', value: '98%', icon: ThumbsUp },
@@ -22,7 +22,7 @@ const applications = [
     title: '商业空间',
     subtitle: 'Commercial Spaces',
     description: '适用于酒店、写字楼、商场等商业空间的装饰装修，打造专业品质空间。整合地板系统、洁具卫浴、家电系统等全品类供应。',
-    image: '/images/app-commercial.jpg',
+    image: '/hanshan/images/app-commercial.jpg',
     stats: [
       { label: '合作客户', value: '300+', icon: Users },
       { label: '满意度', value: '99%', icon: ThumbsUp },
@@ -33,7 +33,7 @@ const applications = [
     title: '住宅精装',
     subtitle: 'Residential Decoration',
     description: '为房地产开发商提供整体精装解决方案，提升住宅品质与价值。涵盖全屋定制、材料选配、外墙系统等整装服务。',
-    image: '/images/app-residential.jpg',
+    image: '/hanshan/images/app-residential.jpg',
     stats: [
       { label: '合作客户', value: '200+', icon: Users },
       { label: '满意度', value: '97%', icon: ThumbsUp },

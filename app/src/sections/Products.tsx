@@ -16,7 +16,7 @@ const products = [
       { label: '规格', value: '1220×2440mm' },
       { label: '环保', value: 'E0/E1级' },
     ],
-    image: '/images/product-osb.jpg',
+    image: '/hanshan/images/product-osb.jpg',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const products = [
       { label: '规格', value: '1220×2440mm' },
       { label: '密度', value: '650-750kg/m³' },
     ],
-    image: '/images/product-particle.jpg',
+    image: '/hanshan/images/product-particle.jpg',
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const products = [
       { label: '耐磨', value: '≥350转' },
       { label: '耐污', value: '等级5' },
     ],
-    image: '/images/product-melamine.jpg',
+    image: '/hanshan/images/product-melamine.jpg',
   },
 ];
 

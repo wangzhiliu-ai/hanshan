@@ -165,7 +165,7 @@ export default function Hero() {
               >
                 <div className="relative rounded-lg overflow-hidden shadow-2xl">
                   <img
-                    src="/images/hero-products.jpg"
+                    src="/hanshan/images/hero-products.jpg"
                     alt="悍山板材产品"
                     className="w-full h-auto object-cover"
                   />

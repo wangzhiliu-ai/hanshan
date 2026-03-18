@@ -122,7 +122,7 @@ export default function WallSystem() {
         {/* Hero Image */}
         <div ref={imageRef} className="relative mb-16 rounded-2xl overflow-hidden opacity-0">
           <img
-            src="/images/wall-system.jpg"
+            src="/hanshan/images/wall-system.jpg"
             alt="外墙系统"
             className="w-full h-[400px] md:h-[500px] object-cover"
           />
