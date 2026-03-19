@@ -12,7 +12,7 @@ export default function GlobalSupply() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: 'url(/hanshan/images/supply-chain.jpg)',
+          backgroundImage: 'url(/images/supply-chain.jpg)',
         }}
       />
       
